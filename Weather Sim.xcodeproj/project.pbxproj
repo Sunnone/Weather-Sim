@@ -13,6 +13,10 @@
 		EAB0A2452C4962900002ED19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB0A2432C4962900002ED19 /* Main.storyboard */; };
 		EAB0A2472C4962920002ED19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB0A2462C4962920002ED19 /* Assets.xcassets */; };
 		EAB0A24A2C4962920002ED19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB0A2482C4962920002ED19 /* LaunchScreen.storyboard */; };
+		EAB0A25A2C4BBE2E0002ED19 /* SwitchLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A2592C4BBE2E0002ED19 /* SwitchLanguage.swift */; };
+		EAB0A2612C4BD2560002ED19 /* MainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A2602C4BD2560002ED19 /* MainImageView.swift */; };
+		EAB0A2632C4D15FC0002ED19 /* HorizontalMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A2622C4D15FC0002ED19 /* HorizontalMenuCollectionView.swift */; };
+		EAB0A2652C4D18500002ED19 /* HorizontalMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB0A2642C4D18500002ED19 /* HorizontalMenuCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		EAB0A2462C4962920002ED19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAB0A2492C4962920002ED19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAB0A24B2C4962920002ED19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAB0A2592C4BBE2E0002ED19 /* SwitchLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLanguage.swift; sourceTree = "<group>"; };
+		EAB0A2602C4BD2560002ED19 /* MainImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageView.swift; sourceTree = "<group>"; };
+		EAB0A2622C4D15FC0002ED19 /* HorizontalMenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuCollectionView.swift; sourceTree = "<group>"; };
+		EAB0A2642C4D18500002ED19 /* HorizontalMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,25 @@
 			children = (
 				EAB0A23D2C4962900002ED19 /* AppDelegate.swift */,
 				EAB0A23F2C4962900002ED19 /* SceneDelegate.swift */,
-				EAB0A2412C4962900002ED19 /* ViewController.swift */,
+				EAB0A25F2C4BD1DF0002ED19 /* Controllers */,
+				EAB0A2602C4BD2560002ED19 /* MainImageView.swift */,
+				EAB0A2622C4D15FC0002ED19 /* HorizontalMenuCollectionView.swift */,
+				EAB0A2642C4D18500002ED19 /* HorizontalMenuCollectionViewCell.swift */,
+				EAB0A2592C4BBE2E0002ED19 /* SwitchLanguage.swift */,
 				EAB0A2432C4962900002ED19 /* Main.storyboard */,
 				EAB0A2462C4962920002ED19 /* Assets.xcassets */,
 				EAB0A2482C4962920002ED19 /* LaunchScreen.storyboard */,
 				EAB0A24B2C4962920002ED19 /* Info.plist */,
 			);
 			path = "Weather Sim";
+			sourceTree = "<group>";
+		};
+		EAB0A25F2C4BD1DF0002ED19 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EAB0A2412C4962900002ED19 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAB0A2612C4BD2560002ED19 /* MainImageView.swift in Sources */,
 				EAB0A2422C4962900002ED19 /* ViewController.swift in Sources */,
 				EAB0A23E2C4962900002ED19 /* AppDelegate.swift in Sources */,
 				EAB0A2402C4962900002ED19 /* SceneDelegate.swift in Sources */,
+				EAB0A25A2C4BBE2E0002ED19 /* SwitchLanguage.swift in Sources */,
+				EAB0A2652C4D18500002ED19 /* HorizontalMenuCollectionViewCell.swift in Sources */,
+				EAB0A2632C4D15FC0002ED19 /* HorizontalMenuCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +319,13 @@
 				DEVELOPMENT_TEAM = 86SCP3D476;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Weather Sim/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,11 +349,13 @@
 				DEVELOPMENT_TEAM = 86SCP3D476;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Weather Sim/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
